@@ -1,0 +1,243 @@
+/*
+Стиль для форм (регистрация, авторизация)
+ */
+.form-container {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    width: 100%; /* Настройте ширину формы на 100% */
+    max-width: 300px; /* Установите максимальную ширину формы */
+    margin: 0 auto; /* Добавьте автоматические отступы слева и справа для центрирования */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+form h1 {
+    margin-bottom: 20px; /* Добавляет отступ вниз для выравнивания заголовка */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2E86C1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a5f5; /* более темный голубой при наведении */
+}
+
+button:active {
+    background-color: #0073e6; /* еще более темный голубой при клике */
+}
+
+/*
+Home jsp
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Это сделает контейнер по всей высоте экрана */
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Центрирует текст внутри контейнера */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+a {
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #2E86C1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #45a5f5; /* более темный голубой при наведении */
+}
+
+a:active {
+    background-color: #0073e6; /* еще более темный голубой при клике */
+}
+
+
+/*
+Стиль страницы профиля/админки
+ */
+.addImageButton[class="add-image-button circle"] {
+    display: inline-flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    width: 40px; /* Ширина круглой кнопки */
+    height: 40px; /* Высота круглой кнопки */
+    border-radius: 50%; /* Создание круглой формы */
+    background-color: #ccc; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Удаление стандартного подчёркивания */
+    font-size: 16px; /* Размер текста */
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#imageContainer {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a.button {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #2E86C1;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #45a5f5;
+    cursor: pointer;
+}
+
+a.button:active {
+    background-color: #0073e6;
+}
+
+.b-links {
+    text-align: center;
+}
+
+.b-links a {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #2E86C1;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.b-links a:hover {
+    background-color: #45a5f5;
+    cursor: pointer;
+}
+
+.b-links a:active {
+    background-color: #0073e6;
+}
+
+.info {
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Устанавливаем направление flexbox в колонку */
+    align-items: center; /* Центрируем элементы по центру */
+}
+
+.b-links, .bottom-info {
+    display: flex; /* Используем flexbox для дочерних элементов */
+    justify-content: space-around; /* Размещаем элементы по горизонтали с отступом между ними */
+}
+.bottom-info h1, .bottom-info a.button {
+    margin: 10px; /* Добавим отступ вокруг h1 и кнопки */
+}
+
+.bottom-info a.button {
+    display: inline-block; /* Использовать inline-block вместо блочного элемента */
+    width: 100px; /* Установить фиксированную ширину кнопки */
+    text-align: center; /* Выравнять текст по центру кнопки */
+}
+
+.bottom-info h1 {
+    margin-right: 300px; /* Увеличить расстояние между h1 и кнопкой settings */
+}
+
+
+/*
+настройки
+ */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.setting-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.clear-form-fields {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+
+
+
